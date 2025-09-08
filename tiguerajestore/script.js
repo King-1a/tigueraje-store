@@ -29,19 +29,3 @@ async function buyProduct(id) {
 }
 loadProducts();
 
-<script>
-  // Lista de imágenes según el orden de los productos en tu JSON
-  const imagenes = [
-    '/assets/images/Manejo-Realista.png', 
-    '/assets/images/Loteria.jpeg'
-  ];
-
-  // Asignar imagen a cada producto cargado
-  document.querySelectorAll('#product-list .product').forEach((prod, i) => {
-    const img = prod.querySelector('img');
-    if (img && imagenes[i]) {
-      img.src = imagenes[i];       // Ruta de la imagen
-      img.alt = img.alt || `Producto ${i+1}`; // Alt si no existe
-    }
-  });
-</script>
