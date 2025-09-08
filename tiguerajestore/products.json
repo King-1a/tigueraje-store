@@ -9,7 +9,6 @@
     "image": "assets/images/Manejo-Realista.png"
   },
   {
-  
     "id": "Loteria",
     "name": "Loteria",
     "price": 3,
@@ -17,5 +16,5 @@
     "description": "Sistema de Loteria Moderna Mas Realista para MTA.",
     "file": "Loteria.zip",
     "image": "assets/images/Loteria.jpeg"
-  },
-  {
+  }
+]
