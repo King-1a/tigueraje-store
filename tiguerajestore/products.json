@@ -1,18 +1,10 @@
 [
   {
-    "id": "script1",
-    "name": "Sistema de Policías MTA",
-    "price": 15,
+    "id": "Manejo_realista",
+    "name": "Manejo Realista",
+    "price": 5,
     "currency": "USD",
-    "description": "Un sistema completo de policía para tu servidor MTA.",
-    "file": "ejemplo1.zip"
-  },
-  {
-    "id": "script2",
-    "name": "Sistema de Mecánico RP",
-    "price": 10,
-    "currency": "USD",
-    "description": "Trabajo de mecánico realista con reparaciones y pagos.",
-    "file": "ejemplo2.zip"
+    "description": "Script Manejo Realista para MTA.",
+    "file": "ManejoRealista.rar"
   }
 ]
