@@ -6,7 +6,7 @@
     "currency": "USD",
     "description": "Sistema De Manejo Realista para MTA.",
     "file": "ManejoRealista.rar",
-    "image": "assets/images/Manejo-Realista.png"
+    "image": "/assets/images/Manejo-Realista.png"
   },
   {
     "id": "Loteria",
@@ -15,6 +15,6 @@
     "currency": "USD",
     "description": "Sistema de Loteria Moderna Mas Realista para MTA.",
     "file": "Loteria.zip",
-    "image": "assets/images/Loteria.jpeg"
+    "image": "/assets/images/Loteria.jpeg"
   }
 ]
