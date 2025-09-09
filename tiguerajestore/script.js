@@ -6,6 +6,7 @@ async function loadProducts() {
     const div = document.createElement('div');
     div.className = 'product';
     div.innerHTML = `
+      <img src="${p.image}" alt="${p.name}" class="product-img">
       <h3>${p.name}</h3>
       <p>${p.description}</p>
       <p><strong>${p.price} ${p.currency}</strong></p>
@@ -14,6 +15,7 @@ async function loadProducts() {
     container.appendChild(div);
   });
 }
+
 async function buyProduct(id) {
   const res = await fetch('/create-order', {
     method: 'POST',
@@ -27,5 +29,7 @@ async function buyProduct(id) {
     alert('Error al crear la orden.');
   }
 }
+
 loadProducts();
+
 
