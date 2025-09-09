@@ -8,13 +8,14 @@ async function loadProducts() {
     div.innerHTML = `
       <img src="${p.image}" alt="${p.name}" class="product-img">
       <h3>${p.name}</h3>
-      <p>${p.description}</p>
-      <p><strong>${p.price} ${p.currency}</strong></p>
-      <button onclick="buyProduct('${p.id}')">Comprar</button>
+      <p class="product-desc">${p.description}</p>
+      <p class="product-price"><strong>${p.price} ${p.currency}</strong></p>
+      <button class="buy-btn" onclick="buyProduct('${p.id}')">Comprar</button>
     `;
     container.appendChild(div);
   });
 }
+
 
 async function buyProduct(id) {
   const res = await fetch('/create-order', {
