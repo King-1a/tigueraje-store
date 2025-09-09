@@ -16,7 +16,6 @@ async function loadProducts() {
   });
 }
 
-
 async function buyProduct(id) {
   const res = await fetch('/create-order', {
     method: 'POST',
