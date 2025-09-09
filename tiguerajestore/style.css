@@ -1,8 +1,12 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #002868, #ce1126);
   color: #fff;
+  background: 
+    url('https://i.imgur.com/Mm1lMKY.png') no-repeat center center, /* logo */
+    linear-gradient(to right, #002868, #ce1126); /* degradado */
+  background-size: contain, cover; /* logo primero, degradado detrás */
+  background-attachment: fixed;
 }
 header {
   display: flex;
