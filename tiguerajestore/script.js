@@ -32,4 +32,24 @@ async function buyProduct(id) {
 
 loadProducts();
 
+// Función para enviar una solicitud GET a tu aplicación en Render
+function keepAppAlive() {
+  fetch('https://tigueraje-store.onrender.com/')
+    .then(response => {
+      if (response.ok) {
+        console.log('Aplicación activa');
+      } else {
+        console.error('Error al mantener la aplicación activa');
+      }
+    })
+    .catch(error => {
+      console.error('Error en la solicitud:', error);
+    });
+}
+
+// Ejecutar la función cada 14 minutos (840,000 milisegundos)
+setInterval(keepAppAlive, 840000);
+
+// Ejecutar inmediatamente al cargar el script
+keepAppAlive();
 
