@@ -158,3 +158,23 @@ footer {
   transition: opacity .15s;
 }
 .buy-btn:hover { opacity: 0.92; }
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab-btn {
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4752c4;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #002868;
+}
